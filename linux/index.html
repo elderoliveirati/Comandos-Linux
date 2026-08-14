@@ -11,28 +11,24 @@
       
       
       
-        <link rel="prev" href="../configuracao/">
-      
-      
-        <link rel="next" href="../administracao/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Monitoramento - HELP - Administração Linux & PostgreSQL</title>
+        <title>Index - HELP - Administração Linux & PostgreSQL</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#22-postgresql-sessoes-e-bloqueios" class="md-skip">
+        <a href="#1-navegacao-pelo-sistema-de-arquivos" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -92,7 +88,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../.." title="HELP - Administração Linux &amp; PostgreSQL" class="md-header__button md-logo" aria-label="HELP - Administração Linux & PostgreSQL" data-md-component="logo">
+    <a href=".." title="HELP - Administração Linux &amp; PostgreSQL" class="md-header__button md-logo" aria-label="HELP - Administração Linux & PostgreSQL" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Monitoramento
+              Index
             
           </span>
         </div>
@@ -209,7 +205,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href=".." class="md-tabs__link">
           
   
   
@@ -225,13 +221,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../basico/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../postgresql/basico/" class="md-tabs__link">
           
   
   
@@ -251,7 +245,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../utilitarios/logs/" class="md-tabs__link">
+        <a href="../utilitarios/logs/" class="md-tabs__link">
           
   
   
@@ -271,7 +265,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../referencia/diagnostico/" class="md-tabs__link">
+        <a href="../referencia/diagnostico/" class="md-tabs__link">
           
   
   
@@ -311,7 +305,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="HELP - Administração Linux &amp; PostgreSQL" class="md-nav__button md-logo" aria-label="HELP - Administração Linux & PostgreSQL" data-md-component="logo">
+    <a href=".." title="HELP - Administração Linux &amp; PostgreSQL" class="md-nav__button md-logo" aria-label="HELP - Administração Linux & PostgreSQL" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -381,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -409,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/disco-processos-servicos/" class="md-nav__link">
+      <a href="disco-processos-servicos/" class="md-nav__link">
         
   
   
@@ -437,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/usuarios-permissoes/" class="md-nav__link">
+      <a href="usuarios-permissoes/" class="md-nav__link">
         
   
   
@@ -465,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/rede-ssh/" class="md-nav__link">
+      <a href="rede-ssh/" class="md-nav__link">
         
   
   
@@ -493,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/compactacao-pacotes/" class="md-nav__link">
+      <a href="compactacao-pacotes/" class="md-nav__link">
         
   
   
@@ -525,31 +519,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -567,7 +556,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -585,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basico/" class="md-nav__link">
+      <a href="../postgresql/basico/" class="md-nav__link">
         
   
   
@@ -613,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../migracao/" class="md-nav__link">
+      <a href="../postgresql/migracao/" class="md-nav__link">
         
   
   
@@ -641,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../usuarios-permissoes/" class="md-nav__link">
+      <a href="../postgresql/usuarios-permissoes/" class="md-nav__link">
         
   
   
@@ -669,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../backup-restauracao/" class="md-nav__link">
+      <a href="../postgresql/backup-restauracao/" class="md-nav__link">
         
   
   
@@ -697,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuracao/" class="md-nav__link">
+      <a href="../postgresql/configuracao/" class="md-nav__link">
         
   
   
@@ -722,37 +711,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Monitoramento
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../postgresql/monitoramento/" class="md-nav__link">
         
   
   
@@ -768,103 +730,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sessoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sessões
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consultas-em-execucao" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Consultas em execução
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conexoes-ativas-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conexões ativas 1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conexoes-ativas-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conexões ativas 2
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identificar-bloqueios" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Identificar bloqueios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#encerrar-sessao" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Encerrar sessão
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finalizar-conexoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Finalizar conexões
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -877,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../administracao/" class="md-nav__link">
+      <a href="../postgresql/administracao/" class="md-nav__link">
         
   
   
@@ -964,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilitarios/logs/" class="md-nav__link">
+      <a href="../utilitarios/logs/" class="md-nav__link">
         
   
   
@@ -992,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilitarios/shell-avancado/" class="md-nav__link">
+      <a href="../utilitarios/shell-avancado/" class="md-nav__link">
         
   
   
@@ -1020,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utilitarios/sistema-e-wsl/" class="md-nav__link">
+      <a href="../utilitarios/sistema-e-wsl/" class="md-nav__link">
         
   
   
@@ -1048,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../vim/vim.md" class="md-nav__link">
+      <a href="../vim/vim.md" class="md-nav__link">
         
   
   
@@ -1135,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referencia/diagnostico/" class="md-nav__link">
+      <a href="../referencia/diagnostico/" class="md-nav__link">
         
   
   
@@ -1163,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referencia/atencao-especial/" class="md-nav__link">
+      <a href="../referencia/atencao-especial/" class="md-nav__link">
         
   
   
@@ -1191,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referencia/referencia-rapida/" class="md-nav__link">
+      <a href="../referencia/referencia-rapida/" class="md-nav__link">
         
   
   
@@ -1236,8 +1101,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1246,79 +1109,345 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sessoes" class="md-nav__link">
+  <a href="#1-navegacao-pelo-sistema-de-arquivos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Sessões
+        1. Navegação pelo sistema de arquivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Navegação pelo sistema de arquivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diretorio-atual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diretório atual
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#consultas-em-execucao" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#listar-arquivos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Consultas em execução
+        Listar arquivos
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#conexoes-ativas-1" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#entrar-em-um-diretorio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conexões ativas 1
+        Entrar em um diretório
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#conexoes-ativas-2" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#criar-diretorio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conexões ativas 2
+        Criar diretório
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#identificar-bloqueios" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#criar-arquivo-vazio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Identificar bloqueios
+        Criar arquivo vazio
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#encerrar-sessao" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#copiar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Encerrar sessão
+        Copiar
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#finalizar-conexoes" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#mover-ou-renomear" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Finalizar conexões
+        Mover ou renomear
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remover-arquivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remover arquivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remover-diretorio-vazio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remover diretório vazio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remover-diretorio-e-conteudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remover diretório e conteúdo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-localizar-arquivos-e-diretorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Localizar arquivos e diretórios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Localizar arquivos e diretórios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procurar-pelo-nome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procurar pelo nome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procurar-somente-arquivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procurar somente arquivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procurar-arquivos-modificados-recentemente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procurar arquivos modificados recentemente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procurar-arquivos-grandes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procurar arquivos grandes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descobrir-onde-esta-um-comando" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descobrir onde está um comando
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-visualizacao-e-edicao-de-arquivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Visualização e edição de arquivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Visualização e edição de arquivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mostrar-conteudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mostrar conteúdo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primeiras-linhas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primeiras linhas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ultimas-linhas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Últimas linhas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acompanhar-log-em-tempo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acompanhar log em tempo real
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editar-com-nano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editar com nano
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editar-com-vivim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editar com vi/vim
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-pesquisa-dentro-de-arquivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Pesquisa dentro de arquivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Pesquisa dentro de arquivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procurar-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procurar texto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procurar-recursivamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procurar recursivamente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostrar-numero-da-linha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mostrar número da linha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combinar-comandos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combinar comandos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1339,73 +1468,122 @@
 
 
 
-<h1 id="22-postgresql-sessoes-e-bloqueios">22. PostgreSQL — sessões e bloqueios<a class="headerlink" href="#22-postgresql-sessoes-e-bloqueios" title="Permanent link">&para;</a></h1>
-<h3 id="sessoes">Sessões<a class="headerlink" href="#sessoes" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span>
-<span class="w">    </span><span class="n">pid</span><span class="p">,</span>
-<span class="w">    </span><span class="n">usename</span><span class="p">,</span>
-<span class="w">    </span><span class="n">datname</span><span class="p">,</span>
-<span class="w">    </span><span class="n">client_addr</span><span class="p">,</span>
-<span class="w">    </span><span class="k">state</span><span class="p">,</span>
-<span class="w">    </span><span class="n">query_start</span><span class="p">,</span>
-<span class="w">    </span><span class="n">query</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="p">;</span>
+  <h1>Index</h1>
+
+<h2 id="1-navegacao-pelo-sistema-de-arquivos">1. Navegação pelo sistema de arquivos<a class="headerlink" href="#1-navegacao-pelo-sistema-de-arquivos" title="Permanent link">&para;</a></h2>
+<h3 id="diretorio-atual">Diretório atual<a class="headerlink" href="#diretorio-atual" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">pwd</span>
 </code></pre></div>
-<h3 id="consultas-em-execucao">Consultas em execução<a class="headerlink" href="#consultas-em-execucao" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span>
-<span class="w">    </span><span class="n">pid</span><span class="p">,</span>
-<span class="w">    </span><span class="n">usename</span><span class="p">,</span>
-<span class="w">    </span><span class="n">now</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">query_start</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">tempo</span><span class="p">,</span>
-<span class="w">    </span><span class="n">query</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="k">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;active&#39;</span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">query_start</span><span class="p">;</span>
+<h3 id="listar-arquivos">Listar arquivos<a class="headerlink" href="#listar-arquivos" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ls
+ls<span class="w"> </span>-l
+ls<span class="w"> </span>-lh
+ls<span class="w"> </span>-la
+ls<span class="w"> </span>-lhat
 </code></pre></div>
-<h3 id="conexoes-ativas-1">Conexões ativas 1<a class="headerlink" href="#conexoes-ativas-1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pid</span><span class="p">,</span><span class="w"> </span><span class="n">usename</span><span class="p">,</span><span class="w"> </span><span class="n">datname</span><span class="p">,</span><span class="w"> </span><span class="n">client_addr</span><span class="p">,</span><span class="w"> </span><span class="k">state</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="p">;</span>
+<ul>
+<li><code>-l</code> — formato detalhado</li>
+<li><code>-h</code> — tamanhos legíveis</li>
+<li><code>-a</code> — inclui arquivos ocultos</li>
+<li><code>-t</code> — ordena por data</li>
+<li><code>-r</code> — ordem reversa</li>
+</ul>
+<h3 id="entrar-em-um-diretorio">Entrar em um diretório<a class="headerlink" href="#entrar-em-um-diretorio" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/caminho/do/diretorio
+<span class="nb">cd</span><span class="w"> </span>..
+<span class="nb">cd</span><span class="w"> </span>~
+<span class="nb">cd</span><span class="w"> </span>-
 </code></pre></div>
-<h3 id="conexoes-ativas-2">Conexões ativas 2<a class="headerlink" href="#conexoes-ativas-2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pid</span><span class="p">,</span><span class="w"> </span><span class="n">usename</span><span class="p">,</span><span class="w"> </span><span class="n">application_name</span><span class="p">,</span><span class="w"> </span><span class="n">client_addr</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">datname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;#database_nome&#39;</span><span class="p">;</span>
+<h3 id="criar-diretorio">Criar diretório<a class="headerlink" href="#criar-diretorio" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>nome_diretorio
+mkdir<span class="w"> </span>-p<span class="w"> </span>/caminho/estrutura/completa
 </code></pre></div>
-<h3 id="identificar-bloqueios">Identificar bloqueios<a class="headerlink" href="#identificar-bloqueios" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span>
-<span class="w">    </span><span class="n">blocked</span><span class="p">.</span><span class="n">pid</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">blocked_pid</span><span class="p">,</span>
-<span class="w">    </span><span class="n">blocked</span><span class="p">.</span><span class="n">query</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">blocked_query</span><span class="p">,</span>
-<span class="w">    </span><span class="n">blocking</span><span class="p">.</span><span class="n">pid</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">blocking_pid</span><span class="p">,</span>
-<span class="w">    </span><span class="n">blocking</span><span class="p">.</span><span class="n">query</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">blocking_query</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="w"> </span><span class="n">blocked</span>
-<span class="k">JOIN</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="w"> </span><span class="n">blocking</span>
-<span class="w">    </span><span class="k">ON</span><span class="w"> </span><span class="n">blocking</span><span class="p">.</span><span class="n">pid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">ANY</span><span class="p">(</span><span class="n">pg_blocking_pids</span><span class="p">(</span><span class="n">blocked</span><span class="p">.</span><span class="n">pid</span><span class="p">));</span>
+<h3 id="criar-arquivo-vazio">Criar arquivo vazio<a class="headerlink" href="#criar-arquivo-vazio" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>touch<span class="w"> </span>arquivo.txt
 </code></pre></div>
-<h3 id="encerrar-sessao">Encerrar sessão<a class="headerlink" href="#encerrar-sessao" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pg_terminate_backend</span><span class="p">(</span><span class="n">PID</span><span class="p">);</span>
+<h3 id="copiar">Copiar<a class="headerlink" href="#copiar" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>arquivo.txt<span class="w"> </span>destino/
+cp<span class="w"> </span>-r<span class="w"> </span>diretorio/<span class="w"> </span>destino/
 </code></pre></div>
-<h3 id="finalizar-conexoes">Finalizar conexões<a class="headerlink" href="#finalizar-conexoes" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pg_terminate_backend</span><span class="p">(</span><span class="n">pid</span><span class="p">)</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">datname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;#database_nome&#39;</span>
-<span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">pid</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="n">pg_backend_pid</span><span class="p">();</span>
+<h3 id="mover-ou-renomear">Mover ou renomear<a class="headerlink" href="#mover-ou-renomear" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>mv<span class="w"> </span>arquivo.txt<span class="w"> </span>destino/
+mv<span class="w"> </span>arquivo_antigo.txt<span class="w"> </span>arquivo_novo.txt
 </code></pre></div>
-<hr />
-<h1 id="23-postgresql-vacuum-e-analyze">23. PostgreSQL — VACUUM e ANALYZE<a class="headerlink" href="#23-postgresql-vacuum-e-analyze" title="Permanent link">&para;</a></h1>
-<h3 id="atualizar-estatisticas">Atualizar estatísticas<a class="headerlink" href="#atualizar-estatisticas" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">ANALYZE</span><span class="p">;</span>
+<h3 id="remover-arquivo">Remover arquivo<a class="headerlink" href="#remover-arquivo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>arquivo.txt
 </code></pre></div>
-<h3 id="vacuum">Vacuum<a class="headerlink" href="#vacuum" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">VACUUM</span><span class="p">;</span>
+<h3 id="remover-diretorio-vazio">Remover diretório vazio<a class="headerlink" href="#remover-diretorio-vazio" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>rmdir<span class="w"> </span>diretorio
 </code></pre></div>
-<h3 id="vacuum-e-analise">Vacuum e análise<a class="headerlink" href="#vacuum-e-analise" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">VACUUM</span><span class="w"> </span><span class="k">ANALYZE</span><span class="p">;</span>
-</code></pre></div>
-<h3 id="vacuum-completo">Vacuum completo<a class="headerlink" href="#vacuum-completo" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">VACUUM</span><span class="w"> </span><span class="k">FULL</span><span class="p">;</span>
+<h3 id="remover-diretorio-e-conteudo">Remover diretório e conteúdo<a class="headerlink" href="#remover-diretorio-e-conteudo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>-r<span class="w"> </span>diretorio
 </code></pre></div>
 <blockquote>
-<p><code>VACUUM FULL</code> pode bloquear a tabela e exigir bastante espaço temporário. Não use indiscriminadamente em produção.</p>
+<p>Evite <code>rm -rf</code> sem verificar cuidadosamente o caminho.</p>
 </blockquote>
+<hr />
+<h2 id="2-localizar-arquivos-e-diretorios">2. Localizar arquivos e diretórios<a class="headerlink" href="#2-localizar-arquivos-e-diretorios" title="Permanent link">&para;</a></h2>
+<h3 id="procurar-pelo-nome">Procurar pelo nome<a class="headerlink" href="#procurar-pelo-nome" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/caminho<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;arquivo.txt&quot;</span>
+find<span class="w"> </span>/caminho<span class="w"> </span>-iname<span class="w"> </span><span class="s2">&quot;*.sql&quot;</span>
+find<span class="w"> </span>/<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;postgresql&quot;</span>
+</code></pre></div>
+<h3 id="procurar-somente-arquivos">Procurar somente arquivos<a class="headerlink" href="#procurar-somente-arquivos" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/caminho<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.log&quot;</span>
+</code></pre></div>
+<h3 id="procurar-arquivos-modificados-recentemente">Procurar arquivos modificados recentemente<a class="headerlink" href="#procurar-arquivos-modificados-recentemente" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/caminho<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-mtime<span class="w"> </span>-1
+</code></pre></div>
+<h3 id="procurar-arquivos-grandes">Procurar arquivos grandes<a class="headerlink" href="#procurar-arquivos-grandes" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-size<span class="w"> </span>+1G<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+</code></pre></div>
+<h3 id="descobrir-onde-esta-um-comando">Descobrir onde está um comando<a class="headerlink" href="#descobrir-onde-esta-um-comando" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>which<span class="w"> </span>psql
+whereis<span class="w"> </span>psql
+</code></pre></div>
+<hr />
+<h2 id="3-visualizacao-e-edicao-de-arquivos">3. Visualização e edição de arquivos<a class="headerlink" href="#3-visualizacao-e-edicao-de-arquivos" title="Permanent link">&para;</a></h2>
+<h3 id="mostrar-conteudo">Mostrar conteúdo<a class="headerlink" href="#mostrar-conteudo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>arquivo.txt
+less<span class="w"> </span>arquivo.txt
+more<span class="w"> </span>arquivo.txt
+</code></pre></div>
+<h3 id="primeiras-linhas">Primeiras linhas<a class="headerlink" href="#primeiras-linhas" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>head<span class="w"> </span>arquivo.txt
+head<span class="w"> </span>-n<span class="w"> </span><span class="m">20</span><span class="w"> </span>arquivo.txt
+</code></pre></div>
+<h3 id="ultimas-linhas">Últimas linhas<a class="headerlink" href="#ultimas-linhas" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>tail<span class="w"> </span>arquivo.txt
+tail<span class="w"> </span>-n<span class="w"> </span><span class="m">50</span><span class="w"> </span>arquivo.txt
+</code></pre></div>
+<h3 id="acompanhar-log-em-tempo-real">Acompanhar log em tempo real<a class="headerlink" href="#acompanhar-log-em-tempo-real" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-f<span class="w"> </span>/caminho/arquivo.log
+</code></pre></div>
+<h3 id="editar-com-nano">Editar com nano<a class="headerlink" href="#editar-com-nano" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>arquivo.txt
+</code></pre></div>
+<h3 id="editar-com-vivim">Editar com vi/vim<a class="headerlink" href="#editar-com-vivim" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>vi<span class="w"> </span>arquivo.txt
+vim<span class="w"> </span>arquivo.txt
+</code></pre></div>
+<hr />
+<h2 id="4-pesquisa-dentro-de-arquivos">4. Pesquisa dentro de arquivos<a class="headerlink" href="#4-pesquisa-dentro-de-arquivos" title="Permanent link">&para;</a></h2>
+<h3 id="procurar-texto">Procurar texto<a class="headerlink" href="#procurar-texto" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span><span class="s2">&quot;postgres&quot;</span><span class="w"> </span>arquivo.txt
+grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;erro&quot;</span><span class="w"> </span>arquivo.log
+</code></pre></div>
+<h3 id="procurar-recursivamente">Procurar recursivamente<a class="headerlink" href="#procurar-recursivamente" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-R<span class="w"> </span><span class="s2">&quot;texto&quot;</span><span class="w"> </span>/caminho
+</code></pre></div>
+<h3 id="mostrar-numero-da-linha">Mostrar número da linha<a class="headerlink" href="#mostrar-numero-da-linha" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;erro&quot;</span><span class="w"> </span>arquivo.log
+</code></pre></div>
+<h3 id="combinar-comandos">Combinar comandos<a class="headerlink" href="#combinar-comandos" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>arquivo.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;ERROR&quot;</span>
+</code></pre></div>
+<p>Ou, de forma mais direta:</p>
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span><span class="s2">&quot;ERROR&quot;</span><span class="w"> </span>arquivo.log
+</code></pre></div>
 <hr />
 
 
@@ -1462,10 +1640,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

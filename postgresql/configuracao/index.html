@@ -613,6 +613,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../migracao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migração
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../usuarios-permissoes/" class="md-nav__link">
         
   
@@ -969,6 +997,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/vim.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1219,44 +1275,6 @@
 <span class="k">SHOW</span><span class="w"> </span><span class="n">port</span><span class="p">;</span>
 <span class="k">SHOW</span><span class="w"> </span><span class="n">max_connections</span><span class="p">;</span>
 </code></pre></div>
-<hr />
-<h1 id="20-postgresql-pg_hbaconf">20. PostgreSQL — pg_hba.conf<a class="headerlink" href="#20-postgresql-pg_hbaconf" title="Permanent link">&para;</a></h1>
-<p>O arquivo <code>pg_hba.conf</code> controla como clientes podem se autenticar.</p>
-<p>Consultar localização:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SHOW</span><span class="w"> </span><span class="n">hba_file</span><span class="p">;</span>
-</code></pre></div>
-<p>Exemplo de regra:</p>
-<div class="highlight"><pre><span></span><code>host    nome_banco    usuario    192.168.1.100/32    scram-sha-256
-</code></pre></div>
-<p>Depois de alterar:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pg_reload_conf</span><span class="p">();</span>
-</code></pre></div>
-<p>Ou:</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>postgresql
-</code></pre></div>
-<p>Verificar regras carregadas:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_hba_file_rules</span><span class="p">;</span>
-</code></pre></div>
-<blockquote>
-<p>Evite liberar redes inteiras sem necessidade. Prefira o menor intervalo de IP possível.</p>
-</blockquote>
-<hr />
-<h1 id="21-postgresql-listen_addresses">21. PostgreSQL — listen_addresses<a class="headerlink" href="#21-postgresql-listen_addresses" title="Permanent link">&para;</a></h1>
-<p>Ver configuração:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SHOW</span><span class="w"> </span><span class="n">listen_addresses</span><span class="p">;</span>
-</code></pre></div>
-<p>Para aceitar conexões externas, normalmente é necessário ajustar <code>postgresql.conf</code>, por exemplo:</p>
-<div class="highlight"><pre><span></span><code>listen_addresses = &#39;*&#39;
-</code></pre></div>
-<p>Depois, é necessário permitir o acesso no <code>pg_hba.conf</code> e garantir que firewall/rede permitam a porta.</p>
-<p>Porta padrão:</p>
-<div class="highlight"><pre><span></span><code>5432
-</code></pre></div>
-<p>Testar a partir de outro servidor:</p>
-<div class="highlight"><pre><span></span><code>nc<span class="w"> </span>-zv<span class="w"> </span>IP_DO_SERVIDOR<span class="w"> </span><span class="m">5432</span>
-</code></pre></div>
-<hr />
 
 
 

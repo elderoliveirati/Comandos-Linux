@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../configuracao/">
+        <link rel="prev" href="../basico/">
       
       
-        <link rel="next" href="../administracao/">
+        <link rel="next" href="../usuarios-permissoes/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Monitoramento - HELP - Administração Linux & PostgreSQL</title>
+        <title>Migração - HELP - Administração Linux & PostgreSQL</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#22-postgresql-sessoes-e-bloqueios" class="md-skip">
+        <a href="#34-comandos-migracao-database-postgresql" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Monitoramento
+              Migração
             
           </span>
         </div>
@@ -610,10 +610,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../migracao/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migração
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -629,6 +656,191 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#maquina-antiga" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Máquina antiga
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mover-para-pasta-temporaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mover para pasta temporaria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerar-arquivo-de-backup-em-formato-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gerar arquivo de backup em formato texto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listar-arquivos-detalhadamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listar arquivos detalhadamente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mover-arquivo-para-pasta-especifica-caso-necessario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mover arquivo para pasta especifica caso necessário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nova-maquina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nova Máquina
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logar-com-postgres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logar com postgres
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizar-repositorio-para-migracoes-do-dia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizar repositorio para migracoes do dia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transferir-arquivo-para-nova-maquina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transferir arquivo para nova máquina
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criar-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criar database
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restaurar-arquivo-de-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restaurar arquivo de backup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criar-usuario-e-aplicar-owner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criar usuário e aplicar owner
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definir-privilegios-para-objetos-ja-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir privilégios para objetos já existentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definir-privilegios-para-objetos-futuros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir privilégios para objetos futuros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passos-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passos finais
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -722,37 +934,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Monitoramento
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../monitoramento/" class="md-nav__link">
         
   
   
@@ -768,103 +953,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sessoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sessões
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consultas-em-execucao" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Consultas em execução
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conexoes-ativas-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conexões ativas 1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conexoes-ativas-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conexões ativas 2
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identificar-bloqueios" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Identificar bloqueios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#encerrar-sessao" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Encerrar sessão
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finalizar-conexoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Finalizar conexões
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1246,10 +1334,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sessoes" class="md-nav__link">
+  <a href="#maquina-antiga" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Sessões
+        Máquina antiga
       
     </span>
   </a>
@@ -1257,10 +1345,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#consultas-em-execucao" class="md-nav__link">
+  <a href="#mover-para-pasta-temporaria" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Consultas em execução
+        Mover para pasta temporaria
       
     </span>
   </a>
@@ -1268,10 +1356,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conexoes-ativas-1" class="md-nav__link">
+  <a href="#gerar-arquivo-de-backup-em-formato-texto" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conexões ativas 1
+        Gerar arquivo de backup em formato texto
       
     </span>
   </a>
@@ -1279,10 +1367,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conexoes-ativas-2" class="md-nav__link">
+  <a href="#listar-arquivos-detalhadamente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conexões ativas 2
+        Listar arquivos detalhadamente
       
     </span>
   </a>
@@ -1290,10 +1378,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#identificar-bloqueios" class="md-nav__link">
+  <a href="#mover-arquivo-para-pasta-especifica-caso-necessario" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Identificar bloqueios
+        Mover arquivo para pasta especifica caso necessário
       
     </span>
   </a>
@@ -1301,10 +1389,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#encerrar-sessao" class="md-nav__link">
+  <a href="#nova-maquina" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Encerrar sessão
+        Nova Máquina
       
     </span>
   </a>
@@ -1312,10 +1400,98 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#finalizar-conexoes" class="md-nav__link">
+  <a href="#logar-com-postgres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Finalizar conexões
+        Logar com postgres
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizar-repositorio-para-migracoes-do-dia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizar repositorio para migracoes do dia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transferir-arquivo-para-nova-maquina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transferir arquivo para nova máquina
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criar-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criar database
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restaurar-arquivo-de-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restaurar arquivo de backup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criar-usuario-e-aplicar-owner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criar usuário e aplicar owner
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definir-privilegios-para-objetos-ja-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir privilégios para objetos já existentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definir-privilegios-para-objetos-futuros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definir privilégios para objetos futuros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passos-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passos finais
       
     </span>
   </a>
@@ -1339,74 +1515,84 @@
 
 
 
-<h1 id="22-postgresql-sessoes-e-bloqueios">22. PostgreSQL — sessões e bloqueios<a class="headerlink" href="#22-postgresql-sessoes-e-bloqueios" title="Permanent link">&para;</a></h1>
-<h3 id="sessoes">Sessões<a class="headerlink" href="#sessoes" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span>
-<span class="w">    </span><span class="n">pid</span><span class="p">,</span>
-<span class="w">    </span><span class="n">usename</span><span class="p">,</span>
-<span class="w">    </span><span class="n">datname</span><span class="p">,</span>
-<span class="w">    </span><span class="n">client_addr</span><span class="p">,</span>
-<span class="w">    </span><span class="k">state</span><span class="p">,</span>
-<span class="w">    </span><span class="n">query_start</span><span class="p">,</span>
-<span class="w">    </span><span class="n">query</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="p">;</span>
+<h1 id="34-comandos-migracao-database-postgresql">34. Comandos migracao database PostgreSQL<a class="headerlink" href="#34-comandos-migracao-database-postgresql" title="Permanent link">&para;</a></h1>
+<h3 id="maquina-antiga">Máquina antiga<a class="headerlink" href="#maquina-antiga" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>elder.oliveira@IP_MAQUINA_ANTIGA
 </code></pre></div>
-<h3 id="consultas-em-execucao">Consultas em execução<a class="headerlink" href="#consultas-em-execucao" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span>
-<span class="w">    </span><span class="n">pid</span><span class="p">,</span>
-<span class="w">    </span><span class="n">usename</span><span class="p">,</span>
-<span class="w">    </span><span class="n">now</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">query_start</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">tempo</span><span class="p">,</span>
-<span class="w">    </span><span class="n">query</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="k">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;active&#39;</span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">query_start</span><span class="p">;</span>
+<h3 id="mover-para-pasta-temporaria">Mover para pasta temporaria<a class="headerlink" href="#mover-para-pasta-temporaria" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/temp/
 </code></pre></div>
-<h3 id="conexoes-ativas-1">Conexões ativas 1<a class="headerlink" href="#conexoes-ativas-1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pid</span><span class="p">,</span><span class="w"> </span><span class="n">usename</span><span class="p">,</span><span class="w"> </span><span class="n">datname</span><span class="p">,</span><span class="w"> </span><span class="n">client_addr</span><span class="p">,</span><span class="w"> </span><span class="k">state</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="p">;</span>
+<h3 id="gerar-arquivo-de-backup-em-formato-texto">Gerar arquivo de backup em formato texto<a class="headerlink" href="#gerar-arquivo-de-backup-em-formato-texto" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>pg_dump<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span><span class="c1">#database_nome &gt; #database_nome.sql</span>
 </code></pre></div>
-<h3 id="conexoes-ativas-2">Conexões ativas 2<a class="headerlink" href="#conexoes-ativas-2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pid</span><span class="p">,</span><span class="w"> </span><span class="n">usename</span><span class="p">,</span><span class="w"> </span><span class="n">application_name</span><span class="p">,</span><span class="w"> </span><span class="n">client_addr</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">datname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;#database_nome&#39;</span><span class="p">;</span>
+<h3 id="listar-arquivos-detalhadamente">Listar arquivos detalhadamente<a class="headerlink" href="#listar-arquivos-detalhadamente" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-lhat
 </code></pre></div>
-<h3 id="identificar-bloqueios">Identificar bloqueios<a class="headerlink" href="#identificar-bloqueios" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span>
-<span class="w">    </span><span class="n">blocked</span><span class="p">.</span><span class="n">pid</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">blocked_pid</span><span class="p">,</span>
-<span class="w">    </span><span class="n">blocked</span><span class="p">.</span><span class="n">query</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">blocked_query</span><span class="p">,</span>
-<span class="w">    </span><span class="n">blocking</span><span class="p">.</span><span class="n">pid</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">blocking_pid</span><span class="p">,</span>
-<span class="w">    </span><span class="n">blocking</span><span class="p">.</span><span class="n">query</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">blocking_query</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="w"> </span><span class="n">blocked</span>
-<span class="k">JOIN</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="w"> </span><span class="n">blocking</span>
-<span class="w">    </span><span class="k">ON</span><span class="w"> </span><span class="n">blocking</span><span class="p">.</span><span class="n">pid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">ANY</span><span class="p">(</span><span class="n">pg_blocking_pids</span><span class="p">(</span><span class="n">blocked</span><span class="p">.</span><span class="n">pid</span><span class="p">));</span>
+<h3 id="mover-arquivo-para-pasta-especifica-caso-necessario">Mover arquivo para pasta especifica caso necessário<a class="headerlink" href="#mover-arquivo-para-pasta-especifica-caso-necessario" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>mv<span class="w"> </span><span class="c1">#database_nome.sql /tmp/</span>
 </code></pre></div>
-<h3 id="encerrar-sessao">Encerrar sessão<a class="headerlink" href="#encerrar-sessao" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pg_terminate_backend</span><span class="p">(</span><span class="n">PID</span><span class="p">);</span>
+<h3 id="nova-maquina">Nova Máquina<a class="headerlink" href="#nova-maquina" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>elder.oliveira@IP_MAQUINA_NOVA
 </code></pre></div>
-<h3 id="finalizar-conexoes">Finalizar conexões<a class="headerlink" href="#finalizar-conexoes" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pg_terminate_backend</span><span class="p">(</span><span class="n">pid</span><span class="p">)</span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">datname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;#database_nome&#39;</span>
-<span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">pid</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="n">pg_backend_pid</span><span class="p">();</span>
+<h3 id="logar-com-postgres">Logar com postgres<a class="headerlink" href="#logar-com-postgres" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-l
+</code></pre></div>
+<h3 id="organizar-repositorio-para-migracoes-do-dia">Organizar repositorio para migracoes do dia<a class="headerlink" href="#organizar-repositorio-para-migracoes-do-dia" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/backups/
+mkdir<span class="w"> </span>migracao_pgbanco_<span class="s2">&quot;DATA_DIA_MIGRACAO&quot;</span>
+<span class="nb">cd</span><span class="w"> </span>/migracao_pgbanco_<span class="s2">&quot;DATA_DIA_MIGRACAO&quot;</span>
+</code></pre></div>
+<h3 id="transferir-arquivo-para-nova-maquina">Transferir arquivo para nova máquina<a class="headerlink" href="#transferir-arquivo-para-nova-maquina" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>elder.oliveira@IP_MAQUINA_ANTIGA:/tmp/#database_nome.sql<span class="w"> </span>.
+</code></pre></div>
+<h3 id="criar-database">Criar database<a class="headerlink" href="#criar-database" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;create database #database_nome;&quot;</span>
+</code></pre></div>
+<h3 id="restaurar-arquivo-de-backup">Restaurar arquivo de backup<a class="headerlink" href="#restaurar-arquivo-de-backup" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>psql<span class="w"> </span>-d<span class="w"> </span><span class="c1">#database_nome &lt; #database_nome.sql</span>
+</code></pre></div>
+<h3 id="criar-usuario-e-aplicar-owner">Criar usuário e aplicar owner<a class="headerlink" href="#criar-usuario-e-aplicar-owner" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>create<span class="w"> </span>user<span class="w"> </span><span class="c1">#usuario_nome with #login password &#39;*&#39;;</span>
+alter<span class="w"> </span>database<span class="w"> </span><span class="c1">#database_nome owner to #usuario_nome;</span>
+</code></pre></div>
+<h3 id="definir-privilegios-para-objetos-ja-existentes">Definir privilégios para objetos já existentes<a class="headerlink" href="#definir-privilegios-para-objetos-ja-existentes" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>grant<span class="w"> </span>all<span class="w"> </span>privileges<span class="w"> </span>on<span class="w"> </span>database<span class="w"> </span><span class="c1">#database_nome to #usuario_nome</span>
+grant<span class="w"> </span>all<span class="w"> </span>privileges<span class="w"> </span>on<span class="w"> </span>all<span class="w"> </span>tables<span class="w"> </span><span class="k">in</span><span class="w"> </span>schema<span class="w"> </span>public<span class="w"> </span>to<span class="w"> </span><span class="c1">#usuario_nome;</span>
+grant<span class="w"> </span>all<span class="w"> </span>privileges<span class="w"> </span>on<span class="w"> </span>all<span class="w"> </span>sequences<span class="w"> </span><span class="k">in</span><span class="w"> </span>schema<span class="w"> </span>public<span class="w"> </span>to<span class="w"> </span><span class="c1">#usuario_nome;</span>
+grant<span class="w"> </span>all<span class="w"> </span>privileges<span class="w"> </span>on<span class="w"> </span>all<span class="w"> </span>functions<span class="w"> </span><span class="k">in</span><span class="w"> </span>schema<span class="w"> </span>public<span class="w"> </span>to<span class="w"> </span><span class="c1">#usuario_nome;</span>
+</code></pre></div>
+<h3 id="definir-privilegios-para-objetos-futuros">Definir privilégios para objetos futuros<a class="headerlink" href="#definir-privilegios-para-objetos-futuros" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>alter<span class="w"> </span>default<span class="w"> </span>privileges<span class="w"> </span><span class="k">in</span><span class="w"> </span>schema<span class="w"> </span>public
+grant<span class="w"> </span>all<span class="w"> </span>on<span class="w"> </span>tables<span class="w"> </span>to<span class="w"> </span><span class="c1">#usuario_nome</span>
+
+alter<span class="w"> </span>default<span class="w"> </span>privileges<span class="w"> </span><span class="k">in</span><span class="w"> </span>schema<span class="w"> </span>public
+grant<span class="w"> </span>all<span class="w"> </span>on<span class="w"> </span>sequences<span class="w"> </span>to<span class="w"> </span><span class="c1">#usuario_nome</span>
+
+alter<span class="w"> </span>default<span class="w"> </span>privileges<span class="w"> </span><span class="k">in</span><span class="w"> </span>schema<span class="w"> </span>public
+grant<span class="w"> </span>all<span class="w"> </span>on<span class="w"> </span>functions<span class="w"> </span>to<span class="w"> </span><span class="c1">#usuario_nome</span>
+</code></pre></div>
+<h3 id="passos-finais">Passos finais<a class="headerlink" href="#passos-finais" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Liberar<span class="w"> </span>IP<span class="w"> </span>no<span class="w"> </span>pg_hba_conf
+Passar<span class="w"> </span>IP,<span class="w"> </span>usuario<span class="w"> </span>e<span class="w"> </span>senha<span class="w"> </span>
+Atualizar<span class="w"> </span>o<span class="w"> </span>arquivo<span class="w"> </span>de<span class="w"> </span>configuração<span class="w"> </span>da<span class="w"> </span>aplicação
+</code></pre></div>
+<h1 id="recarregar-arquivo-de-configuracao">Recarregar arquivo de configuração<a class="headerlink" href="#recarregar-arquivo-de-configuracao" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;SELECT pg_reload_conf();&quot;</span>
 </code></pre></div>
 <hr />
-<h1 id="23-postgresql-vacuum-e-analyze">23. PostgreSQL — VACUUM e ANALYZE<a class="headerlink" href="#23-postgresql-vacuum-e-analyze" title="Permanent link">&para;</a></h1>
-<h3 id="atualizar-estatisticas">Atualizar estatísticas<a class="headerlink" href="#atualizar-estatisticas" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">ANALYZE</span><span class="p">;</span>
+<h1 id="35-comandos-opcionais">35. Comandos opcionais<a class="headerlink" href="#35-comandos-opcionais" title="Permanent link">&para;</a></h1>
+<h3 id="listar-tabelas-da-base">Listar tabelas da base<a class="headerlink" href="#listar-tabelas-da-base" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="se">\ </span>dt+
 </code></pre></div>
-<h3 id="vacuum">Vacuum<a class="headerlink" href="#vacuum" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">VACUUM</span><span class="p">;</span>
+<h3 id="conectar-psql-a-banco-especifico">Conectar psql a banco específico<a class="headerlink" href="#conectar-psql-a-banco-especifico" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="se">\c</span><span class="w"> </span><span class="c1">#database_nome</span>
 </code></pre></div>
-<h3 id="vacuum-e-analise">Vacuum e análise<a class="headerlink" href="#vacuum-e-analise" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">VACUUM</span><span class="w"> </span><span class="k">ANALYZE</span><span class="p">;</span>
+<h3 id="testar-conexao-do-postgresql-com-a-aplicacao">Testar conexão do PostgreSQL com a aplicação<a class="headerlink" href="#testar-conexao-do-postgresql-com-a-aplicacao" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nv">RAILS_EW</span><span class="o">=</span>production<span class="w"> </span>bundle<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>rails<span class="w"> </span>runner<span class="w"> </span><span class="s2">&quot;puts ActiveRecord::Base.connection.execute(&#39;SELECT version()&#39;)&quot;</span>
 </code></pre></div>
-<h3 id="vacuum-completo">Vacuum completo<a class="headerlink" href="#vacuum-completo" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">VACUUM</span><span class="w"> </span><span class="k">FULL</span><span class="p">;</span>
+<h3 id="criar-links-simbolico">Criar links simbólico<a class="headerlink" href="#criar-links-simbolico" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ln<span class="w"> </span>-s<span class="w"> </span>/var/lib/pgsql/data/pg_hba.conf<span class="w"> </span>pg_hba.conf
 </code></pre></div>
-<blockquote>
-<p><code>VACUUM FULL</code> pode bloquear a tabela e exigir bastante espaço temporário. Não use indiscriminadamente em produção.</p>
-</blockquote>
-<hr />
 
 
 
